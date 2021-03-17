@@ -11,6 +11,9 @@ const db = mysql.createPool({
     database: 'advpin91_testevotacao'
 });
 
+
+const PORT  = process.env.PORT || 3000
+
 app.use(cors());
 
 app.use(express.json());
@@ -89,7 +92,7 @@ app.get('/', (req, res) =>  {
 
 
 
-app.listen(3000, () => {
-    console.log('Running on port 3000');
+app.listen(PORT, () => {
+    console.log('Running on port 3000 ou ' + PORT );
     
 });
