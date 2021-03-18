@@ -87,7 +87,7 @@ app.post('/api/insert/bolsonaro', (req, res) =>  {
 
 
 app.get('/', (req, res) =>  {
-    res.send("Iniciado");
+    res.send("Iniciado na porta" + PORT);
 })
 
 
