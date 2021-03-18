@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const db = mysql.createPool({
     host: '50.116.112.109',
-    user: 'advpin91_wp447',
+    user: 'advpin91_admin',
     password: '08121520',
     database: 'advpin91_testevotacao'
 });
@@ -87,7 +87,7 @@ app.post('/api/insert/bolsonaro', (req, res) =>  {
 
 
 app.get('/', (req, res) =>  {
-    res.send("Iniciado na porta" + PORT);
+    res.send("Iniciado na porta " + PORT);
 })
 
 
